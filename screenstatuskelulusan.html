@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Klasifikasi Status Kelulusan</title>
+    <link rel="stylesheet" type="text/css" href="stylestatus.css" />
+  </head>
+  <body>
+    <h1>Klasifikasi Naive Bayes</h1>
+    <form>
+      <label>Masukkan Nama: </label>
+      <input type="text" id="nama" name="nama" />
+      <br /><br />
+      <label>Masukkan IPK:</label>
+      <input type="text" id="ipk" name="ipk" required />
+      <br />
+      <br />
+      <label>Masukkan poin TAK:</label>
+      <input type="text" id="tak" name="tak" required />
+      <br />
+      <br />
+      <label>Masukkan SKS:</label>
+      <input type="text" id="sks" name="sks" required/ >
+      <br /><br />
+      <input type="button" value="Hitung" onclick="hitung()" />
+    </form>
+    <br />
+    <div id="hasil"></div>
+
+    <script>
+      function hitung() {
+        // mengambil nilai dari inputan
+        var ipk = document.getElementById("ipk").value;
+        var tak = document.getElementById("tak").value;
+        var sks = document.getElementById("sks").value;
+
+        // melakukan prediksi
+        var hasil = "";
+        if (ipk > 2.5 && tak > 15 && sks == 144) {
+          hasil = "Tepat Waktu";
+        } else {
+          hasil = "Tertunda";
+        }
+
+        // menampilkan hasil prediksi
+        document.getElementById("hasil").innerHTML = "Hasil prediksi: " + hasil;
+      }
+    </script>
+  </body>
+</html>

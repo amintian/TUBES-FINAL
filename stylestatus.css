@@ -1,0 +1,78 @@
+/* Styling untuk header */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px #aaa;
+}
+
+/* Styling untuk form */
+form {
+  margin: auto;
+  width: 30%;
+  text-align: auto;
+  padding: 1px;
+  border: 2px solid #ccc;
+  border-radius: 1px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 4px #aaa;
+}
+
+/* Styling untuk label */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 100px;
+  text-transform: uppercase;
+}
+
+/* Styling untuk input */
+input[type="text"] {
+  width: 1000%;
+  padding: 100px 20px;
+  margin: 58px 10px;
+  box-sizing: border-box;
+  border: 8px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50;
+  box-shadow: 2px 2px 4px #4caf50;
+}
+
+/* Styling untuk button */
+input[type="button"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Styling untuk hasil */
+#hasil {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+  padding: 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 4px #aaa;
+}
